@@ -2,8 +2,8 @@ require './oauth_helper'
 
 include OAuthHelper
 
-set :oauth_consumer_key, ''
-set :oauth_consumer_secret, ''
+set :oauth_consumer_key, ENV['OAUTH_CONSUMER_KEY']
+set :oauth_consumer_secret, ENV['OAUTH_CONSUMER_SECRET']
 set :oauth_site, ''
 set :oauth_redirect_to, '/welcome'
 
